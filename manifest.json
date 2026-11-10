@@ -2,20 +2,16 @@
   "name": "PhonePe",
   "short_name": "PhonePe",
   "start_url": "/",
+  "id": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#5f259f",
   "theme_color": "#5f259f",
   "icons": [
     {
-      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-icon.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-icon.png",
-      "sizes": "512x512",
-      "type": "image/png",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%235f259f'/%3E%3Cpath fill='%23ffffff' d='M205 130h110c40 0 75 25 75 70s-35 70-75 70h-50v112h-60V130zm60 90h45c15 0 25-10 25-22s-10-22-25-22h-45v44z'/%3E%3C/svg%3E",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]
