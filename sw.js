@@ -1,3 +1,7 @@
-self.addEventListener('fetch', function(e) {
-  // basic service worker
+self.addEventListener('install', (e) => {
+  self.skipWaiting();
+});
+
+self.addEventListener('fetch', (e) => {
+  e.respondWith(fetch(e.request).catch(() => new Response('Offline')));
 });
