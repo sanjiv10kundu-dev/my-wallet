@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>PhonePe</title>
+
+  <!-- PWA & Color Settings -->
   <meta name="theme-color" content="#5f259f">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PhonePe">
   <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Real PhonePe App Icons -->
+  <link rel="icon" type="image/svg+xml" href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-icon.svg">
+  <link rel="apple-touch-icon" href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-icon.svg">
+
+  <!-- Embedded Web App Manifest (for 1-click Install with PhonePe Icon) -->
+  <link rel="manifest" href='data:application/manifest+json,{"name":"PhonePe","short_name":"PhonePe","start_url":".","display":"standalone","background_color":"#5f259f","theme_color":"#5f259f","icons":[{"src":"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-icon.svg","sizes":"192x192 512x512","type":"image/svg+xml","purpose":"any maskable"}]}'>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -39,16 +51,16 @@
       </div>
     </div>
 
-    <!-- ================= SCREEN 1: HOME PAGE (SCROLLABLE) ================= -->
+    <!-- ================= SCREEN 1: HOME PAGE ================= -->
     <div id="screenHome" class="flex-1 overflow-y-auto pb-24 hide-scrollbar">
       
       <!-- Festive Header Banner -->
       <div class="bg-gradient-to-b from-[#3d0e4e] to-[#200529] text-white px-4 pt-1 pb-7 rounded-b-[28px] shadow-sm relative">
         <div class="flex justify-between items-center pb-2">
           <div class="flex items-center space-x-2">
-            <!-- DP (Extracted from your screenshot) -->
+            <!-- User DP -->
             <div class="w-10 h-10 rounded-full border-2 border-white overflow-hidden shadow bg-gray-200">
-              <img src="https://images.weserv.nl/?url=https://i.ibb.co/vzB7CqJ/user-dp.png&w=100&h=100&fit=cover" alt="Profile" class="w-full h-full object-cover" onerror="this.src='https://ui-avatars.com/api/?name=Sanjeev&background=1d4ed8&color=fff'">
+              <img src="https://ui-avatars.com/api/?name=Sanjeev&background=5f259f&color=fff&bold=true" alt="Profile" class="w-full h-full object-cover">
             </div>
             <div class="text-[10px] bg-black/40 px-2 py-0.5 rounded-full flex items-center space-x-1 border border-white/20">
               <i class="fa-solid fa-qrcode text-[9px]"></i>
@@ -108,7 +120,7 @@
         </div>
       </div>
 
-      <!-- Cashback Strip -->
+      <!-- Quick Banner -->
       <div class="px-4 mt-3">
         <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 rounded-xl p-2.5 flex items-center justify-between text-xs text-gray-700 shadow-sm">
           <div class="flex items-center space-x-2">
@@ -145,7 +157,7 @@
             <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-base">
               <i class="fa-solid fa-file-invoice-dollar"></i>
             </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Loan Repayment</span>
+            <span class="text-[10px] font-medium text-gray-600 mt-1">Loan Payment</span>
           </div>
         </div>
       </div>
@@ -181,101 +193,7 @@
         </div>
       </div>
 
-      <!-- Gold, Silver & Platinum Section -->
-      <div class="px-4 mt-4">
-        <h3 class="text-xs font-bold text-gray-800 mb-2 px-1">Gold, Silver & Platinum</h3>
-        <div class="bg-white rounded-2xl p-3 shadow-sm border border-gray-100 grid grid-cols-4 gap-2 text-center">
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-piggy-bank"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Daily Gold with ₹10</span>
-          </div>
-          <div class="flex flex-col items-center relative">
-            <span class="absolute -top-1 bg-purple-700 text-[7px] text-white font-bold px-1 rounded-sm">Popular</span>
-            <div class="w-10 h-10 rounded-xl bg-yellow-50 text-yellow-600 flex items-center justify-center text-base">
-              <i class="fa-solid fa-box-archive"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Buy Gold</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center text-base">
-              <i class="fa-solid fa-circle-dot"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Daily Silver with ₹10</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-gem"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Buy Silver</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Insurance Section -->
-      <div class="px-4 mt-4">
-        <h3 class="text-xs font-bold text-gray-800 mb-2 px-1">Insurance</h3>
-        <div class="bg-white rounded-2xl p-3 shadow-sm border border-gray-100 grid grid-cols-4 gap-2 text-center">
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-motorcycle"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Bike</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-car"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Car</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-kit-medical"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Health</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-umbrella"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Life</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Travel & Transit -->
-      <div class="px-4 mt-4">
-        <h3 class="text-xs font-bold text-gray-800 mb-2 px-1">Travel & Transit</h3>
-        <div class="bg-white rounded-2xl p-3 shadow-sm border border-gray-100 grid grid-cols-4 gap-2 text-center">
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-plane-departure"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Flight</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-bus"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Bus</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-base">
-              <i class="fa-solid fa-train"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Train</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-base">
-              <i class="fa-solid fa-hotel"></i>
-            </div>
-            <span class="text-[10px] font-medium text-gray-600 mt-1">Hotel</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- My QR Card (Real Canara Bank QR) -->
+      <!-- My QR Card -->
       <div class="px-4 mt-6 mb-4">
         <h3 class="text-xs font-bold text-gray-400 tracking-wider text-center mb-2">MY QR</h3>
         <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex flex-col items-center">
@@ -283,12 +201,9 @@
             <span class="w-2 h-2 rounded-full bg-blue-600"></span>
             <span>Canara Bank - 0457</span>
           </div>
-          
-          <!-- Authentic PhonePe Canara QR -->
           <div class="p-2 border border-gray-200 rounded-xl bg-white shadow-inner">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi://pay?pa=9732823546@ibl%26pn=Sanjeev%20Kundu" alt="Canara Bank QR" class="w-44 h-44 object-contain">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi://pay?pa=9732823546@ibl%26pn=Sanjeev%20Kundu" alt="QR" class="w-44 h-44 object-contain">
           </div>
-
           <div class="flex items-center space-x-1.5 mt-3 text-gray-600">
             <span class="text-xs font-medium">UPI ID: 9732823546@ibl</span>
             <i class="fa-regular fa-copy text-[11px] text-gray-400"></i>
@@ -298,7 +213,7 @@
 
     </div>
 
-    <!-- Persistent Bottom Navigation Bar -->
+    <!-- Bottom Nav -->
     <div id="bottomNav" class="fixed bottom-0 w-full max-w-md bg-white border-t border-gray-200 py-1 px-6 flex justify-between items-center text-[10px] font-medium text-gray-500 z-40">
       <div class="flex flex-col items-center text-purple-800">
         <i class="fa-solid fa-house text-lg"></i>
@@ -333,7 +248,6 @@
         <i class="fa-regular fa-circle-question text-gray-600 text-lg"></i>
       </div>
 
-      <!-- Fingerprint banner -->
       <div class="mx-4 mt-3 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-xl p-3 flex justify-between items-center">
         <div>
           <p class="text-xs font-bold text-gray-800 flex items-center space-x-1">
@@ -345,7 +259,6 @@
         <i class="fa-solid fa-shield-halved text-blue-500 text-2xl"></i>
       </div>
 
-      <!-- Canara Bank Account -->
       <div class="p-4 space-y-3">
         <div onclick="goToPin()" class="flex items-center justify-between p-3.5 bg-white border border-gray-200 rounded-xl shadow-xs cursor-pointer active:bg-gray-50">
           <div class="flex items-center space-x-3">
@@ -450,7 +363,7 @@
       </div>
     </div>
 
-    <!-- Realistic Loading Overlay -->
+    <!-- Loading Overlay -->
     <div id="loadingOverlay" class="hidden absolute inset-0 bg-white/95 flex flex-col items-center justify-center z-50">
       <div class="w-12 h-12 border-4 border-purple-200 border-t-purple-700 rounded-full animate-spin"></div>
       <p class="text-xs font-semibold text-gray-700 mt-4">Fetching bank balance...</p>
@@ -489,7 +402,7 @@
   </div>
 
   <script>
-    // Live Dynamic Real-time Clock
+    // Live Clock
     function updateLiveClock() {
       const now = new Date();
       let hours = now.getHours();
